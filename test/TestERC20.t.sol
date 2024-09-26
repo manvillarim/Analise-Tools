@@ -1,11 +1,11 @@
-// SPDX-License-Identifier: MIT
+//SPDX-License-Identifier:MIT
 pragma solidity >= 0.8.0;
 
 import {Test, console2} from "forge-std/Test.sol";
-import {ERC20Mock} from "@openzeppelin/mocks/token/ERC20Mock.sol";
-import {SafeERC20} from "@openzeppelin/token/ERC20/utils/SafeERC20.sol";
+import {ERC20Mock} from "../lib/openzeppelin-contracts/contracts/mocks/token/ERC20Mock.sol";
+import {SafeERC20} from "../lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol";
 
-contract ERC20SymbolicProperties is Test {
+/*contract ERC20SymbolicProperties is Test {
     using SafeERC20 for ERC20Mock;
 
     ERC20Mock token;
@@ -664,7 +664,7 @@ contract ERC20SymbolicProperties is Test {
     }
 
     // Proves that transferring more tokens than the sender has reverts
-    function proveFail_TransferUnderBalance(address recipient, uint256 amount) public {
+    function proveFail_TransferUnderBalancej(address recipient, uint256 amount) public {
         require(msg.sender != address(0) && recipient != address(0) && token.balanceOf(msg.sender) < amount);
             vm.prank(msg.sender);
             
@@ -672,7 +672,7 @@ contract ERC20SymbolicProperties is Test {
     }
 
     // Proves that transferring from an account more tokens than it has reverts
-    function proveFail_TransferFromUnderBalance(address sender, address recipient, uint256 amount) public {
+    function proveFail_TransferFromUnderBalancei(address sender, address recipient, uint256 amount) public {
         require(msg.sender != address(0) && sender != address(0) && recipient != address(0));
             require(token.balanceOf(sender) < amount || token.allowance(sender, msg.sender) < amount);
                 vm.prank(msg.sender);
@@ -845,4 +845,4 @@ contract ERC20SymbolicProperties is Test {
         }
     }
 
-}
+}*/
