@@ -1,6 +1,6 @@
 # DESEMPENHO DO HALMOS NOS TESTES SIMBÓLICOS DO ERC20(OPPEN ZEPPELIN)
 
-**Configurações do Computador: Processador Intel Core i5 12500h(12 núcleos e 16 threads) e 16gb de Memória Ram
+**Configurações do Computador: Processador Intel Core i5 12500h(12 núcleos e 16 threads) e 16gb de Memória Ram**
 
  **DESEMPENHO DE CADA TESTE ESPECÍFICO**
 
